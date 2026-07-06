@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="valhalla_landing_content" name="Valhalla 113 Landing Content">
+        <div id="wrap" class="v113-page">
+            <header class="v113-header" id="v113Top">
+                <div class="v113-container v113-header-inner">
+                    <a class="v113-brand" href="#home" aria-label="Valhalla 113 home">
+                        <img src="/valhalla_113_website/static/src/img/logo_valhalla_light.png" alt="Valhalla 113 Grill and Bar" loading="eager"/>
+                    </a>
+                    <button class="v113-burger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <nav class="v113-nav" aria-label="Valhalla navigation">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#events">Events</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                    <a class="v113-call" href="tel:+18683090421">
+                        <span class="fa fa-phone"></span>
+                        <span>(868) 309-0421</span>
+                    </a>
+                </div>
+            </header>
+
+            <main>
+                <section class="v113-hero" id="home">
+                    <div class="v113-container v113-hero-grid">
+                        <div class="v113-hero-copy">
+                            <div class="v113-kicker">This is Valhalla 113</div>
+                            <h1>Sports. <span>Food.</span><br/>Legends.</h1>
+                            <p>Your ultimate destination for live sports, great food, ice-cold drinks, private events, and unforgettable nights in Caroni.</p>
+                            <div class="v113-actions">
+                                <a class="v113-btn v113-btn-primary" href="#menu">View Menu <span class="fa fa-cutlery"></span></a>
+                                <a class="v113-btn v113-btn-outline" href="#contact">Book a Table <span class="fa fa-calendar"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="v113-features" id="about">
+                    <div class="v113-container v113-feature-grid">
+                        <div class="v113-feature-card">
+                            <span class="v113-feature-icon fa fa-futbol-o"></span>
+                            <div>
+                                <h3>Live Sports</h3>
+                                <p>Catch the biggest games on our big screens.</p>
+                            </div>
+                        </div>
+                        <div class="v113-feature-card">
+                            <span class="v113-feature-icon fa fa-bars"></span>
+                            <div>
+                                <h3>Great Food</h3>
+                                <p>Delicious grilled meals made fresh to order.</p>
+                            </div>
+                        </div>
+                        <div class="v113-feature-card">
+                            <span class="v113-feature-icon fa fa-glass"></span>
+                            <div>
+                                <h3>Cold Drinks</h3>
+                                <p>Beers, cocktails, premium spirits, and specials.</p>
+                            </div>
+                        </div>
+                        <div class="v113-feature-card">
+                            <span class="v113-feature-icon fa fa-users"></span>
+                            <div>
+                                <h3>Good Vibes</h3>
+                                <p>Great music, great people, and a lively atmosphere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="v113-section v113-menu-section" id="menu">
+                    <div class="v113-container">
+                        <div class="v113-section-title">
+                            <span>Our Menu</span>
+                            <h2>Menu Highlights</h2>
+                            <p>Showcase your top selling food and drink items here.</p>
+                        </div>
+                        <div class="v113-menu-grid">
+                            <article class="v113-menu-card">
+                                <img src="/valhalla_113_website/static/src/img/menu_wings.jpg" alt="Jerk Wings" loading="lazy"/>
+                                <div class="v113-menu-info">
+                                    <div>
+                                        <h3>Jerk Wings</h3>
+                                        <p>Spicy. Smoky. Delicious.</p>
+                                    </div>
+                                    <strong>$45</strong>
+                                </div>
+                            </article>
+                            <article class="v113-menu-card">
+                                <img src="/valhalla_113_website/static/src/img/menu_burger.jpg" alt="Valhalla Burger" loading="lazy"/>
+                                <div class="v113-menu-info">
+                                    <div>
+                                        <h3>Valhalla Burger</h3>
+                                        <p>Big, juicy, and legendary.</p>
+                                    </div>
+                                    <strong>$65</strong>
+                                </div>
+                            </article>
+                            <article class="v113-menu-card">
+                                <img src="/valhalla_113_website/static/src/img/menu_ribs.jpg" alt="BBQ Ribs" loading="lazy"/>
+                                <div class="v113-menu-info">
+                                    <div>
+                                        <h3>BBQ Ribs</h3>
+                                        <p>Slow cooked to perfection.</p>
+                                    </div>
+                                    <strong>$85</strong>
+                                </div>
+                            </article>
+                            <article class="v113-menu-card">
+                                <img src="/valhalla_113_website/static/src/img/menu_fries.jpg" alt="Loaded Fries" loading="lazy"/>
+                                <div class="v113-menu-info">
+                                    <div>
+                                        <h3>Loaded Fries</h3>
+                                        <p>Loaded with flavour.</p>
+                                    </div>
+                                    <strong>$40</strong>
+                                </div>
+                            </article>
+                            <article class="v113-menu-card">
+                                <img src="/valhalla_113_website/static/src/img/menu_cocktails.jpg" alt="House Cocktails" loading="lazy"/>
+                                <div class="v113-menu-info">
+                                    <div>
+                                        <h3>House Cocktails</h3>
+                                        <p>Crafted to impress.</p>
+                                    </div>
+                                    <strong>$35+</strong>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="v113-center">
+                            <a class="v113-btn v113-btn-dark" href="#contact"><span class="fa fa-list"></span> View Full Menu</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="v113-section v113-events-section" id="events">
+                    <div class="v113-container">
+                        <div class="v113-section-title v113-section-title-dark">
+                            <span>Upcoming Events</span>
+                            <h2>What's Happening</h2>
+                            <p>Promote weekly events, specials, and live sports nights.</p>
+                        </div>
+                        <div class="v113-events-layout">
+                            <div class="v113-event-grid">
+                                <article class="v113-event-card">
+                                    <img src="/valhalla_113_website/static/src/img/event_soca.jpg" alt="Soca Fridays" loading="lazy"/>
+                                    <div>
+                                        <h3>Soca Fridays</h3>
+                                        <p>Every Friday</p>
+                                    </div>
+                                </article>
+                                <article class="v113-event-card">
+                                    <img src="/valhalla_113_website/static/src/img/event_reggae.jpg" alt="Reggae Night" loading="lazy"/>
+                                    <div>
+                                        <h3>Reggae Night</h3>
+                                        <p>Every Saturday</p>
+                                    </div>
+                                </article>
+                                <article class="v113-event-card">
+                                    <img src="/valhalla_113_website/static/src/img/event_karaoke.jpg" alt="Karaoke Sundays" loading="lazy"/>
+                                    <div>
+                                        <h3>Karaoke Sundays</h3>
+                                        <p>Every Sunday</p>
+                                    </div>
+                                </article>
+                                <article class="v113-event-card">
+                                    <img src="/valhalla_113_website/static/src/img/event_ufc.jpg" alt="UFC Fight Nights" loading="lazy"/>
+                                    <div>
+                                        <h3>UFC Fight Nights</h3>
+                                        <p>Live on Pay-Per-View</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <aside class="v113-booking-card">
+                                <span class="fa fa-calendar-o"></span>
+                                <h3>Private Events &amp; Bookings</h3>
+                                <p>Celebrate birthdays, team limes, fight nights, and special occasions with us.</p>
+                                <a class="v113-btn v113-btn-outline" href="#contact">Book Now <span class="fa fa-angle-right"></span></a>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="v113-section v113-gallery" id="gallery">
+                    <div class="v113-container v113-gallery-grid">
+                        <div>
+                            <span class="v113-red-label">The Valhalla Experience</span>
+                            <h2>Built for big games, good food, and unforgettable nights.</h2>
+                            <p>Use this section for customer photos, bar atmosphere shots, food videos, DJs, event flyers, and match day highlights.</p>
+                        </div>
+                        <div class="v113-stat-grid">
+                            <div><strong>Live</strong><span>Sports</span></div>
+                            <div><strong>Grill</strong><span>Food</span></div>
+                            <div><strong>Cold</strong><span>Drinks</span></div>
+                            <div><strong>Event</strong><span>Ready</span></div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="v113-footer" id="contact">
+                <div class="v113-container v113-footer-grid">
+                    <div class="v113-footer-logo">
+                        <img src="/valhalla_113_website/static/src/img/logo_valhalla_light.png" alt="Valhalla 113 Grill and Bar" loading="lazy"/>
+                    </div>
+                    <div class="v113-contact-item">
+                        <span class="fa fa-map-marker"></span>
+                        <p>113 Frederick Settlement,<br/>Old Southern Main Road,<br/>Caroni, Trinidad &amp; Tobago</p>
+                    </div>
+                    <div class="v113-contact-item">
+                        <span class="fa fa-phone"></span>
+                        <p><a href="tel:+18683090421">(868) 309-0421</a></p>
+                    </div>
+                    <div class="v113-contact-item">
+                        <span class="fa fa-clock-o"></span>
+                        <p>Mon - Thu: 4PM - 12AM<br/>Fri - Sat: 12PM - 2AM<br/>Sun: 12PM - 11PM</p>
+                    </div>
+                    <div class="v113-social">
+                        <h4>Follow Us</h4>
+                        <div>
+                            <a href="#" aria-label="Facebook"><span class="fa fa-facebook"></span></a>
+                            <a href="#" aria-label="Instagram"><span class="fa fa-instagram"></span></a>
+                            <a href="https://wa.me/18683090421" aria-label="WhatsApp"><span class="fa fa-whatsapp"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </template>
+
+    <template id="valhalla_113_standalone_page" name="Valhalla 113 Website Page">
+        <t t-call="website.layout">
+            <t t-set="no_header" t-value="True"/>
+            <t t-set="no_footer" t-value="True"/>
+            <t t-call="valhalla_113_website.valhalla_landing_content"/>
+        </t>
+    </template>
+
+    <record id="page_valhalla_113" model="website.page">
+        <field name="name">Valhalla 113</field>
+        <field name="url">/valhalla-113</field>
+        <field name="view_id" ref="valhalla_113_standalone_page"/>
+        <field name="is_published" eval="True"/>
+    </record>
+
+    <record id="menu_valhalla_113" model="website.menu">
+        <field name="name">Valhalla 113</field>
+        <field name="url">/valhalla-113</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">1</field>
+    </record>
+
+</odoo>
