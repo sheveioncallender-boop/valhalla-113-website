@@ -66,4 +66,13 @@
             <t t-else="">$0</t>
         </xpath>
     </template>
+    <template id="native_footer_copyright" inherit_id="website.layout" name="Valhalla Copyright and Footer Attribution" priority="90">
+        <xpath expr="//footer//span[hasclass('o_footer_copyright_name')]" position="replace">
+            <span t-if="website.valhalla_branding_enabled" class="o_footer_copyright_name me-2 small">© <t t-out="datetime.datetime.now().year"/> Valhalla 113 Bar &amp; Grill. All rights reserved.</span>
+            <t t-else="">$0</t>
+        </xpath>
+        <xpath expr="//footer//t[@t-call='web.brand_promotion']/.." position="attributes">
+            <attribute name="t-if">not editable and not website.valhalla_branding_enabled</attribute>
+        </xpath>
+    </template>
 </odoo>

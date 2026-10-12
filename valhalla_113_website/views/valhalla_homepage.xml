@@ -20,7 +20,34 @@
                             <span class="fa fa-map-marker" aria-hidden="true"/> 113 Frederick Settlement, Old SMR, Caroni</a>
                     </div>
                     <div class="v113-hero-visual">
-                        <img src="/valhalla_113_website/static/src/img/social-lime.jpg" alt="Friends raising cocktails over a table of food" class="v113-hero-photo" loading="eager" fetchpriority="high"/>
+                        <div class="s_carousel_wrapper p-0" data-snippet="s_carousel" data-name="Valhalla Banner" data-vxml="001" data-vcss="001">
+                            <div id="v113HeroCarousel" class="s_carousel s_carousel_default carousel slide v113-hero-carousel" data-bs-ride="carousel" data-bs-interval="6000" data-bs-pause="hover" data-bs-touch="true" role="region" aria-roledescription="carousel" aria-label="Food, drinks, and good company">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-name="Slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                                        <img src="/valhalla_113_website/static/src/img/social-lime.jpg" alt="Friends raising cocktails over a table of food" class="v113-hero-photo" loading="eager" fetchpriority="high"/>
+                                    </div>
+                                    <div class="carousel-item" data-name="Slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+                                        <img src="/valhalla_113_website/static/src/img/grill-editorial.jpg" alt="Grilled chicken served with herbs and dipping sauce" class="v113-hero-photo" loading="lazy"/>
+                                    </div>
+                                    <div class="carousel-item" data-name="Slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+                                        <img src="/valhalla_113_website/static/src/img/cocktails-editorial.jpg" alt="Chilled drinks served over ice" class="v113-hero-photo" loading="lazy"/>
+                                    </div>
+                                </div>
+                                <button type="button" class="carousel-control-prev o_not_editable" data-bs-target="#v113HeroCarousel" data-bs-slide="prev" aria-label="Previous image" title="Previous image" contenteditable="false">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"/>
+                                    <span class="visually-hidden">Previous image</span>
+                                </button>
+                                <button type="button" class="carousel-control-next o_not_editable" data-bs-target="#v113HeroCarousel" data-bs-slide="next" aria-label="Next image" title="Next image" contenteditable="false">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"/>
+                                    <span class="visually-hidden">Next image</span>
+                                </button>
+                                <div class="carousel-indicators o_not_editable">
+                                    <button type="button" data-bs-target="#v113HeroCarousel" data-bs-slide-to="0" aria-label="Good company" class="active" aria-current="true"/>
+                                    <button type="button" data-bs-target="#v113HeroCarousel" data-bs-slide-to="1" aria-label="From the grill"/>
+                                    <button type="button" data-bs-target="#v113HeroCarousel" data-bs-slide-to="2" aria-label="From the bar"/>
+                                </div>
+                            </div>
+                        </div>
                         <div class="v113-hero-stamp">
                             <img src="/valhalla_113_website/static/src/img/logo_official.png" alt="Valhalla 113 official logo" class="" loading="lazy"/>
                             <span>THE LIME<br/>STARTS HERE.</span>

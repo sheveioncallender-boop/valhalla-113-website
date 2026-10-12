@@ -188,3 +188,17 @@
  .v113-menu-info strong { font-size:16px; }
 }
 @media(prefers-reduced-motion:reduce) { .v113-photo-tile > img { transition:none; } }
+
+/* Native Odoo carousel: its interaction handles cycling, touch and reduced motion. */
+.v113-page .v113-hero-carousel { position:relative; }
+.v113-page .v113-hero-carousel .carousel-item { padding:0; }
+.v113-page .v113-hero-carousel .carousel-control-prev,
+.v113-page .v113-hero-carousel .carousel-control-next { width:44px; height:44px; top:50%; bottom:auto; transform:translateY(-50%); background:#101112bb; border:1px solid #ffffff66; border-radius:50%; opacity:1; }
+.v113-page .v113-hero-carousel .carousel-control-prev { left:12px; }
+.v113-page .v113-hero-carousel .carousel-control-next { right:12px; }
+.v113-page .v113-hero-carousel .carousel-control-prev-icon,
+.v113-page .v113-hero-carousel .carousel-control-next-icon { width:18px; height:18px; }
+.v113-page .v113-hero-carousel .carousel-indicators { margin-bottom:14px; }
+.v113-page .v113-hero-carousel .carousel-indicators button { width:28px; height:4px; background-color:#fff; }
+.v113-hero-visual .v113-hero-stamp { z-index:3; pointer-events:none; }
+.v113-hero-visual .v113-photo-caption { bottom:60px; z-index:2; pointer-events:none; }

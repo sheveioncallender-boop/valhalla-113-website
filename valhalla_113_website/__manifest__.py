@@ -1,5 +1,5 @@
 {'name': 'Valhalla 113 Website',
- 'version': '19.0.3.0.0',
+ 'version': '19.0.3.1.0',
  'category': 'Website',
  'summary': 'Valhalla branding and editable pages with native Odoo eCommerce.',
  'author': 'SPXCORP Limited',

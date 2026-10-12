@@ -1,6 +1,6 @@
 # Valhalla 113 Website — Odoo 19
 
-Version **19.0.3.0.0**. Redesigns the homepage and all five supporting pages with Valhalla’s black/red/silver identity, licensed food/drink photography and authentic past-event artwork. The social-led direction puts food, drinks, Caribbean music and the lime first. Odoo’s native header and commerce flow remain intact. See [image provenance](IMAGE_SOURCES.md).
+Version **19.0.3.1.0**. Redesigns the homepage and all five supporting pages with Valhalla’s black/red/silver identity, licensed food/drink photography and authentic past-event artwork. The social-led direction puts food, drinks, Caribbean music and the lime first. Odoo’s native header and commerce flow remain intact. See [image provenance](IMAGE_SOURCES.md).
 
 ## Install fresh through Cloudpepper
 
@@ -62,3 +62,7 @@ Python syntax, Odoo XML schema, data/asset paths, QWeb expressions and reference
 - No online-to-POS conversion, order models, payment behaviour, table tokens or QR backend settings changed in this release.
 
 The addon is an application (`application=True`) and appears in the Apps filter after Cloudpepper has loaded this revision and the Apps List has been refreshed. Search **Valhalla 113 Website**; upgrade it if already installed.
+
+## Update 19.0.3.1.0
+
+The top banner now cycles through three photographs every six seconds using Odoo’s native carousel, with arrows, indicators and touch support. Odoo supplies pause on hover/focus and reduced-motion handling. The footer shows the current year and Valhalla 113 Bar & Grill, and omits Odoo promotional attribution on the branded website. Upgrade the module after syncing Cloudpepper.
