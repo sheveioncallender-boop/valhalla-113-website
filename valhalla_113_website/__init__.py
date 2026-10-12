@@ -1,1 +1,2 @@
-# Valhalla 113 Website module
+from . import models
+from .hooks import uninstall_hook

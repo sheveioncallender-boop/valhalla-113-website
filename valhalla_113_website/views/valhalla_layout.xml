@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="native_layout_branding" inherit_id="website.layout" name="Valhalla Native Website Branding" priority="80">
+        <xpath expr="//div[@id='wrapwrap']" position="attributes">
+            <attribute name="t-attf-class" add="#{'v113-brand-site' if website.valhalla_branding_enabled else ''}" separator=" "/>
+        </xpath>
+    </template>
+    <template id="native_footer_branding" inherit_id="website.footer_custom" name="Valhalla Footer" priority="80">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <t t-if="website.valhalla_branding_enabled">
+                <div id="footer" class="oe_structure oe_structure_solo v113-footer" t-if="not no_footer">
+                    <section class="v113-container v113-footer-columns">
+                        <div>
+                            <a href="/" class="logo">
+                                <img t-att-src="website.image_url(website, 'logo')" alt="Valhalla 113 Bar and Grill" loading="lazy"/>
+                            </a>
+                            <p>Sports. Food. Legends.<br/>Your next great night starts here.</p>
+                        </div>
+                        <div>
+                            <h3>Explore Valhalla</h3>
+                            <a href="/shop">Menu &amp; Online Ordering</a>
+                            <a href="/whats-on">What's On</a>
+                            <a href="/about-valhalla">About Us</a>
+                            <a href="/gallery">Gallery</a>
+                        </div>
+                        <div>
+                            <h3>Visit &amp; Connect</h3>
+                            <p>113 Frederick Settlement,<br/>Old Southern Main Road,<br/>Caroni, Trinidad &amp; Tobago</p>
+                            <a href="tel:+18683090421">(868) 309-0421</a>
+                            <a href="https://wa.me/18683090421">WhatsApp Us</a>
+                            <a href="/visit-us">Directions &amp; Enquiries</a>
+                        </div>
+                        <div>
+                            <h3>Your Order</h3>
+                            <a href="/ordering">How to Order</a>
+                            <a href="/shop/cart">Your Cart</a>
+                            <a href="/my/orders">My Online Orders</a>
+                            <a href="/contactus">Contact the Team</a>
+                        </div>
+                    </section>
+                </div>
+            </t>
+            <t t-else="">$0</t>
+        </xpath>
+    </template>
+    <record id="website_form_valhalla" model="ir.ui.view">
+        <field name="name">website.form.valhalla</field>
+        <field name="model">website</field>
+        <field name="inherit_id" ref="website.view_website_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='logo']" position="after">
+                <field name="valhalla_branding_enabled"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
