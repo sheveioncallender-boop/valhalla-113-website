@@ -13,5 +13,5 @@
  'assets': {'web.assets_frontend': ['valhalla_113_website/static/src/css/valhalla_113.css',
                                     'valhalla_113_website/static/src/css/native_branding.css']},
  'installable': True,
- 'application': False,
+ 'application': True,
  'uninstall_hook': 'uninstall_hook'}
