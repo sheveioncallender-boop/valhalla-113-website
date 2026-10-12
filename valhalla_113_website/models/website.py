@@ -19,7 +19,7 @@ class Website(models.Model):
         # Odoo's product eligibility rules. Never create a second catalogue.
         return self.env["product.template"].search(
             Domain.AND([self.sale_product_domain(), [("is_published", "=", True)]]),
-            order="website_sequence, id", limit=5,
+            order="website_sequence, id", limit=4,
         )
 
     @api.model

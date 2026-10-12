@@ -1,8 +1,10 @@
 # Valhalla 113 Website
 
-Odoo 19 addon **19.0.2.0.0**, deployed from `main` through Cloudpepper.
+Odoo 19 addon **19.0.3.0.0**, deployed from `main` through Cloudpepper.
 
-Preserves Valhalla's homepage design with the official logo, native Odoo header/cart/checkout, published-product highlights, and About, What's On, Gallery, Visit Us and Ordering pages.
+Redesigns all six pages around Valhalla’s food, drinks, Caribbean music and social atmosphere. Keeps the black/red/silver identity, native Odoo header and native ordering flows. Includes real licensed photography and linked past-event artwork.
+
+[Image sources and social research](valhalla_113_website/IMAGE_SOURCES.md)
 
 [Installation, native order flows and required Odoo configuration](valhalla_113_website/README.md)
 

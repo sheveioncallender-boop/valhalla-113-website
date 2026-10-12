@@ -2,60 +2,74 @@
 <odoo>
     <template id="valhalla_landing_content" name="Valhalla 113 Landing Content">
         <div id="wrap" class="v113-page oe_structure">
-            <section class="v113-hero" id="home">
+            <section class="v113-hero">
                 <div class="v113-container v113-hero-grid">
                     <div class="v113-hero-copy">
-                        <div class="v113-kicker">This is Valhalla 113</div>
-                        <h1>Sports. <span>Food.</span>
-                            <br/>Legends.</h1>
-                        <p>Your ultimate destination for live sports, great food, ice-cold drinks, private events, and unforgettable nights in Caroni.</p>
+                        <span class="v113-eyebrow">Valhalla 113 · Bar &amp; Grill · Caroni</span>
+                        <h1>GOOD FOOD.<br/>COLD DRINKS.<br/>
+                            <em>REAL VIBES.</em>
+                        </h1>
+                        <p>Come for a bite. Stay for the lime.<br/>Your people, your music, your spot in Caroni.</p>
                         <div class="v113-actions">
-                            <a class="v113-btn v113-btn-primary" href="/shop">Order Online <span class="fa fa-cutlery"/>
+                            <a href="/shop" class="btn btn-primary v113-button">Order online<span class="fa fa-arrow-right" aria-hidden="true"/>
                             </a>
-                            <a class="v113-btn v113-btn-outline" href="/visit-us">Plan Your Visit <span class="fa fa-calendar"/>
+                            <a href="/whats-on" class="btn btn-outline-light v113-button">What’s on<span class="fa fa-arrow-right" aria-hidden="true"/>
                             </a>
                         </div>
+                        <a class="v113-location" href="/visit-us">
+                            <span class="fa fa-map-marker" aria-hidden="true"/> 113 Frederick Settlement, Old SMR, Caroni</a>
+                    </div>
+                    <div class="v113-hero-visual">
+                        <img src="/valhalla_113_website/static/src/img/social-lime.jpg" alt="Friends raising cocktails over a table of food" class="v113-hero-photo" loading="eager" fetchpriority="high"/>
+                        <div class="v113-hero-stamp">
+                            <img src="/valhalla_113_website/static/src/img/logo_official.png" alt="Valhalla 113 official logo" class="" loading="lazy"/>
+                            <span>THE LIME<br/>STARTS HERE.</span>
+                        </div>
+                        <span class="v113-photo-caption">Food. Drinks. Good company.</span>
                     </div>
                 </div>
             </section>
-            <section class="v113-features" id="about">
-                <div class="v113-container v113-feature-grid">
-                    <div class="v113-feature-card">
-                        <span class="v113-feature-icon fa fa-futbol-o"/>
-                        <div>
-                            <h3>Live Sports</h3>
-                            <p>Catch the biggest games on our big screens.</p>
-                        </div>
-                    </div>
-                    <div class="v113-feature-card">
-                        <span class="v113-feature-icon fa fa-bars"/>
-                        <div>
-                            <h3>Great Food</h3>
-                            <p>Delicious grilled meals made fresh to order.</p>
-                        </div>
-                    </div>
-                    <div class="v113-feature-card">
-                        <span class="v113-feature-icon fa fa-glass"/>
-                        <div>
-                            <h3>Cold Drinks</h3>
-                            <p>Beers, cocktails, premium spirits, and specials.</p>
-                        </div>
-                    </div>
-                    <div class="v113-feature-card">
-                        <span class="v113-feature-icon fa fa-users"/>
-                        <div>
-                            <h3>Good Vibes</h3>
-                            <p>Great music, great people, and a lively atmosphere.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="v113-section v113-menu-section" id="menu">
+            <section class="v113-marquee" aria-label="The Valhalla experience">
                 <div class="v113-container">
-                    <div class="v113-section-title">
-                        <span>Our Menu</span>
-                        <h2>Menu Highlights</h2>
-                        <p>Find your next favourite. Explore our menu and order online.</p>
+                    <span>BAR &amp; GRILL</span>
+                    <b>✦</b>
+                    <span>ISLAND SOUNDS</span>
+                    <b>✦</b>
+                    <span>CARONI LIMES</span>
+                    <b>✦</b>
+                    <span>VALHALLA 113</span>
+                </div>
+            </section>
+            <section class="v113-section v113-light" id="menu">
+                <div class="v113-container">
+                    <div class="v113-section-head">
+                        <div>
+                            <span class="v113-eyebrow">Pull up hungry</span>
+                            <h2>Make a meal<br/>of the moment.</h2>
+                        </div>
+                        <div>
+                            <p>Something to eat. Something cold. Plenty to catch up on. Start with the menu and make it a Valhalla kind of day.</p>
+                            <a class="v113-text-link" href="/shop">Explore the menu <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="v113-food-grid">
+                        <a class="v113-photo-tile" href="/shop">
+                            <img src="/valhalla_113_website/static/src/img/grill-editorial.jpg" alt="Grilled chicken with herbs and dipping sauce" class="" loading="lazy"/>
+                            <div>
+                                <span>FROM THE GRILL</span>
+                                <h3>Bring an appetite.</h3>
+                                <span class="v113-tile-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                        <a class="v113-photo-tile" href="/shop">
+                            <img src="/valhalla_113_website/static/src/img/cocktails-editorial.jpg" alt="Chilled drinks served over ice" class="" loading="lazy"/>
+                            <div>
+                                <span>FROM THE BAR</span>
+                                <h3>Stay for a drink.</h3>
+                                <span class="v113-tile-arrow" aria-hidden="true">↗</span>
+                            </div>
+                        </a>
                     </div>
                     <div class="v113-live-menu o_not_editable">
                         <t t-set="menu_products" t-value="website._valhalla_menu_products()"/>
@@ -76,96 +90,99 @@
                                 </a>
                             </article>
                         </div>
-                        <div t-else="" class="v113-empty-menu">
-                            <h3>Something good is on the menu.</h3>
-                            <p>Call our team for today's food and drinks, or check the online menu for available items.</p>
-                            <a class="v113-btn v113-btn-primary" href="tel:+18683090421">Call (868) 309-0421</a>
+                        <div t-else="" class="v113-menu-note">
+                            <p>Planning your order? Explore the online menu for available items, or <a href="tel:+18683090421">call our team</a> for today’s selection.</p>
                         </div>
-                    </div>
-                    <div class="v113-center">
-                        <a class="v113-btn v113-btn-dark" href="/shop">Explore the Full Menu <span class="fa fa-list"/> View Full Menu</a>
                     </div>
                 </div>
             </section>
-            <section class="v113-section v113-events-section" id="events">
+            <section class="v113-section v113-dark">
                 <div class="v113-container">
-                    <div class="v113-section-title v113-section-title-dark">
-                        <span>Good Times at Valhalla</span>
-                        <h2>What's Happening</h2>
-                        <p>Big games, music, and nights worth getting together for.</p>
-                    </div>
-                    <div class="v113-events-layout">
-                        <div class="v113-event-grid">
-                            <article class="v113-event-card">
-                                <img src="/valhalla_113_website/static/src/img/event_soca.jpg" alt="Soca Fridays" loading="lazy"/>
-                                <div>
-                                    <h3>
-                                        <a href="/whats-on">Soca Fridays</a>
-                                    </h3>
-                                    <p>Ask us what’s coming up</p>
-                                </div>
-                            </article>
-                            <article class="v113-event-card">
-                                <img src="/valhalla_113_website/static/src/img/event_reggae.jpg" alt="Reggae Night" loading="lazy"/>
-                                <div>
-                                    <h3>
-                                        <a href="/whats-on">Reggae Night</a>
-                                    </h3>
-                                    <p>Ask us what’s coming up</p>
-                                </div>
-                            </article>
-                            <article class="v113-event-card">
-                                <img src="/valhalla_113_website/static/src/img/event_karaoke.jpg" alt="Karaoke Sundays" loading="lazy"/>
-                                <div>
-                                    <h3>
-                                        <a href="/whats-on">Karaoke Sundays</a>
-                                    </h3>
-                                    <p>Ask us what’s coming up</p>
-                                </div>
-                            </article>
-                            <article class="v113-event-card">
-                                <img src="/valhalla_113_website/static/src/img/event_ufc.jpg" alt="UFC Fight Nights" loading="lazy"/>
-                                <div>
-                                    <h3>
-                                        <a href="/whats-on">UFC Fight Nights</a>
-                                    </h3>
-                                    <p>Ask us what’s coming up</p>
-                                </div>
-                            </article>
+                    <div class="v113-section-head">
+                        <div>
+                            <span class="v113-eyebrow">The soundtrack to your night</span>
+                            <h2>A little louder.<br/>A lot more life.</h2>
                         </div>
-                        <aside class="v113-booking-card">
-                            <span class="fa fa-calendar-o"/>
-                            <h3>Private Events &amp; Bookings</h3>
-                            <p>Celebrate birthdays, team limes, fight nights, and special occasions with us.</p>
-                            <a class="v113-btn v113-btn-outline" href="/visit-us">Plan Your Visit <span class="fa fa-angle-right"/>
+                        <div>
+                            <p>Soca, reggae, dancehall, and the people who make every lime a good one. Keep up with the latest nights and specials on our socials.</p>
+                            <a href="/whats-on" class="v113-text-link">See what’s on <span aria-hidden="true">↗</span>
                             </a>
-                        </aside>
+                        </div>
+                    </div>
+                    <div class="v113-night-grid">
+                        <div class="v113-night-copy">
+                            <span class="v113-outline-word" aria-hidden="true">VIBES.</span>
+                            <div class="v113-feature-row">
+                                <span>01</span>
+                                <div>
+                                    <h3>After work. Before home.</h3>
+                                    <p>Meet up, unwind, and let the evening find its rhythm.</p>
+                                </div>
+                            </div>
+                            <div class="v113-feature-row">
+                                <span>02</span>
+                                <div>
+                                    <h3>Turn up with your people.</h3>
+                                    <p>Live performances, DJs, and sound-system culture.</p>
+                                </div>
+                            </div>
+                            <div class="v113-feature-row">
+                                <span>03</span>
+                                <div>
+                                    <h3>Make it an occasion.</h3>
+                                    <p>Talk to us about your next birthday or group lime.</p>
+                                </div>
+                            </div>
+                            <div class="v113-actions">
+                                <a href="https://www.facebook.com/profile.php?id=61553546611658" class="btn btn-outline-light v113-button">Follow the latest<span class="fa fa-arrow-right" aria-hidden="true"/>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="v113-featured-social" href="https://www.instagram.com/reel/DSEQ4HWjbuO/" target="_blank" rel="noopener noreferrer">
+                            <img src="/valhalla_113_website/static/src/img/soca-social-2025.jpg" alt="Valhalla’s official Soca Fridays promotional reel featuring Azaryah" class="" loading="lazy"/>
+                            <div>
+                                <span class="v113-eyebrow">From our socials · December 2025</span>
+                                <h3>Valhalla, in its element.</h3>
+                                <span>Watch the Soca Fridays reel ↗</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </section>
-            <section class="v113-section v113-gallery" id="gallery">
-                <div class="v113-container v113-gallery-grid">
+            <section class="v113-section v113-silver">
+                <div class="v113-container v113-order-strip">
                     <div>
-                        <span class="v113-red-label">The Valhalla Experience</span>
-                        <h2>Built for big games, good food, and unforgettable nights.</h2>
-                        <p>Bring your friends, pick your spot, and make a night of it at Valhalla 113.</p>
+                        <span class="v113-eyebrow">Your next order</span>
+                        <h2>Good food.<br/>A few taps away.</h2>
+                        <p>Order online, or scan the QR code when you’re at your table.</p>
                     </div>
-                    <div class="v113-stat-grid">
-                        <div>
-                            <strong>Live</strong>
-                            <span>Sports</span>
-                        </div>
-                        <div>
-                            <strong>Grill</strong>
-                            <span>Food</span>
-                        </div>
-                        <div>
-                            <strong>Cold</strong>
-                            <span>Drinks</span>
-                        </div>
-                        <div>
-                            <strong>Event</strong>
-                            <span>Ready</span>
+                    <div class="v113-order-option">
+                        <span class="fa fa-shopping-bag" aria-hidden="true"/>
+                        <h3>Ordering online?</h3>
+                        <p>Choose your items, add to your cart, and follow checkout.</p>
+                        <a class="v113-text-link" href="/shop">Start your order ↗</a>
+                    </div>
+                    <div class="v113-order-option">
+                        <span class="fa fa-qrcode" aria-hidden="true"/>
+                        <h3>Already here?</h3>
+                        <p>Scan the code at your own table to start a table order.</p>
+                        <a class="v113-text-link" href="/ordering">How it works ↗</a>
+                    </div>
+                </div>
+            </section>
+            <section class="v113-visit-band">
+                <div class="v113-container v113-band-grid">
+                    <div>
+                        <span class="v113-eyebrow">113 Frederick Settlement · Caroni</span>
+                        <h2>Same place.<br/>Your next great lime.</h2>
+                    </div>
+                    <div>
+                        <p>Bring your people. We’ll see you at Valhalla.</p>
+                        <div class="v113-actions">
+                            <a href="/visit-us" class="btn btn-primary v113-button">Find us in Caroni<span class="fa fa-arrow-right" aria-hidden="true"/>
+                            </a>
+                            <a href="/contactus" class="btn btn-outline-light v113-button">Get in touch<span class="fa fa-arrow-right" aria-hidden="true"/>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -178,9 +195,11 @@
         </t>
     </template>
     <record id="page_valhalla_113" model="website.page">
-        <field name="name">Valhalla 113</field>
+        <field name="name">Valhalla 113 Bar &amp; Grill</field>
         <field name="url">/valhalla-113</field>
         <field name="view_id" ref="valhalla_113_standalone_page"/>
         <field name="is_published" eval="True"/>
+        <field name="website_meta_title">Valhalla 113 | Bar, Grill &amp; Good Vibes in Caroni</field>
+        <field name="website_meta_description">Good food, cold drinks, and real vibes. Explore Valhalla 113 in Caroni, browse the menu, order online, and catch up with what’s on.</field>
     </record>
 </odoo>

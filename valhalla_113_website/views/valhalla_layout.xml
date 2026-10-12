@@ -14,7 +14,7 @@
                             <a href="/" class="logo">
                                 <img t-att-src="website.image_url(website, 'logo')" alt="Valhalla 113 Bar and Grill" loading="lazy"/>
                             </a>
-                            <p>Sports. Food. Legends.<br/>Your next great night starts here.</p>
+                            <p>Good food. Cold drinks. Real vibes.</p>
                         </div>
                         <div>
                             <h3>Explore Valhalla</h3>
@@ -29,6 +29,8 @@
                             <a href="tel:+18683090421">(868) 309-0421</a>
                             <a href="https://wa.me/18683090421">WhatsApp Us</a>
                             <a href="/visit-us">Directions &amp; Enquiries</a>
+                            <a href="https://www.instagram.com/valhalla113tt/">Instagram · @valhalla113tt</a>
+                            <a href="https://www.facebook.com/profile.php?id=61553546611658">Facebook</a>
                         </div>
                         <div>
                             <h3>Your Order</h3>
@@ -53,4 +55,15 @@
             </xpath>
         </field>
     </record>
+    <template id="native_header_contact" inherit_id="website.header_text_element" name="Valhalla Native Header Contact" priority="80">
+        <xpath expr="//li" position="replace">
+            <li t-if="website.valhalla_branding_enabled" t-attf-class="#{_item_class}">
+                <a href="tel:+18683090421" class="nav-link o_nav-link_secondary">
+                    <i class="fa fa-phone me-1" aria-hidden="true"/>
+                    <span class="o_force_ltr">(868) 309-0421</span>
+                </a>
+            </li>
+            <t t-else="">$0</t>
+        </xpath>
+    </template>
 </odoo>

@@ -1,6 +1,6 @@
 # Valhalla 113 Website — Odoo 19
 
-Version **19.0.2.0.0**. Preserves the original sports-bar homepage layout, imagery and black/red/silver identity while restoring Odoo's native website header and eCommerce flow.
+Version **19.0.3.0.0**. Redesigns the homepage and all five supporting pages with Valhalla’s black/red/silver identity, licensed food/drink photography and authentic past-event artwork. The social-led direction puts food, drinks, Caribbean music and the lime first. Odoo’s native header and commerce flow remain intact. See [image provenance](IMAGE_SOURCES.md).
 
 ## Install fresh through Cloudpepper
 
@@ -8,7 +8,7 @@ Version **19.0.2.0.0**. Preserves the original sports-bar homepage layout, image
 2. Update the Apps List and install **Valhalla 113 Website**. Its `website_sale` dependency installs native eCommerce.
 3. Install **Valhalla 113 QR Table Ordering** from the companion repository if table ordering is required. Either module can be installed first; neither requires the other.
 4. The website module assigns the landing page to the existing page's website, or the default website on a fresh installation. The root homepage opens Valhalla automatically. Its original `/valhalla-113` URL is retained.
-5. For an existing installation, upgrade the module after rebuilding. The first upgrade configures native navigation and branding; subsequent upgrades preserve website logo, homepage selection, menus and the newly added page edits.
+5. For an existing installation, upgrade the module after rebuilding. The first upgrade configures native navigation and branding; this redesign includes a one-time migration that replaces the five original supporting-page layouts. It preserves website logo, homepage selection and menus. Later upgrades preserve supporting-page editor changes. Independently duplicated/website-specific views are not overwritten; use Odoo’s view reset on a customized copy if you want this new layout there.
 
 ## Pages and native destinations
 
@@ -29,7 +29,7 @@ Edit page content with Odoo Website's editor. Manage navigation with its native 
 
 ## One product catalogue, Odoo's normal flows
 
-No custom cart, checkout, payment controller or order model is added. Homepage highlights read up to five published products in the current website/company, ordered by Odoo's website sequence. Images, names and links come from the product records. Displayed prices use Odoo's pricelist, currency, tax and fiscal-position calculation. Selecting an item opens its native product page for variants/options. Zero-price restrictions remain native.
+No custom cart, checkout, payment controller or order model is added. Homepage highlights read up to four published products in the current website/company, ordered by Odoo's website sequence. Images, names and links come from the product records. Displayed prices use Odoo's pricelist, currency, tax and fiscal-position calculation. Selecting an item opens its native product page for variants/options. Zero-price restrictions remain native.
 
 No placeholder prices, products, inventory quantities, tax rates, payment providers, delivery charges or accounting entries are created. If no products are published, the homepage provides a contact/menu message.
 
@@ -50,4 +50,15 @@ Online Sales orders are **not automatically turned into POS/kitchen orders** by 
 
 ## Validation for this release
 
-Python syntax, Odoo XML schema, data/asset paths, QWeb expressions and references, native inheritance targets and native API names were checked against Odoo 19 source. No running Odoo/PostgreSQL instance was available here: installation, compiled frontend rendering, live checkout/payment and table/kitchen processing require validation on the deployed database.
+Python syntax, Odoo XML schema, data/asset paths, QWeb expressions and references, native inheritance targets and native API names were checked against Odoo 19 source. Presentation-only Chromium fixtures for all six page bodies passed image-loading and horizontal-overflow checks at 1440, 768, 390 and 320 pixels; desktop/mobile screenshots were reviewed. These fixtures use a representative header shell and do not exercise Odoo rendering or header behaviour. No running Odoo/PostgreSQL instance was available here: installation, compiled frontend rendering, live checkout/payment and table/kitchen processing require validation on the deployed database.
+
+
+## Design changes in 19.0.3.0.0
+
+- Larger editorial photography, a mobile layout, clear ordering calls to action, and social links.
+- Past promotions are labelled with their historical dates; current announcements link to official social pages.
+- Optional native header contact text uses the real Valhalla phone number on the branded website. Native menu/cart/search/account/mobile interactions are retained.
+- Native primary actions use red; secondary actions use charcoal; footer links have explicit readable contrast.
+- No online-to-POS conversion, order models, payment behaviour, table tokens or QR backend settings changed in this release.
+
+The addon is an application (`application=True`) and appears in the Apps filter after Cloudpepper has loaded this revision and the Apps List has been refreshed. Search **Valhalla 113 Website**; upgrade it if already installed.
