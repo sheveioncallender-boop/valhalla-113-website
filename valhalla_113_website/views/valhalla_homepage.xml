@@ -33,14 +33,6 @@
                                         <img src="/valhalla_113_website/static/src/img/cocktails-editorial.jpg" alt="Chilled drinks served over ice" class="v113-hero-photo" loading="lazy"/>
                                     </div>
                                 </div>
-                                <button type="button" class="carousel-control-prev o_not_editable" data-bs-target="#v113HeroCarousel" data-bs-slide="prev" aria-label="Previous image" title="Previous image" contenteditable="false">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"/>
-                                    <span class="visually-hidden">Previous image</span>
-                                </button>
-                                <button type="button" class="carousel-control-next o_not_editable" data-bs-target="#v113HeroCarousel" data-bs-slide="next" aria-label="Next image" title="Next image" contenteditable="false">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"/>
-                                    <span class="visually-hidden">Next image</span>
-                                </button>
                                 <div class="carousel-indicators o_not_editable">
                                     <button type="button" data-bs-target="#v113HeroCarousel" data-bs-slide-to="0" aria-label="Good company" class="active" aria-current="true"/>
                                     <button type="button" data-bs-target="#v113HeroCarousel" data-bs-slide-to="1" aria-label="From the grill"/>
@@ -123,6 +115,7 @@
                     </div>
                 </div>
             </section>
+            <t t-call="valhalla_113_website.upcoming_events_section"/>
             <section class="v113-section v113-dark">
                 <div class="v113-container">
                     <div class="v113-section-head">

@@ -70,3 +70,20 @@
 .v113-brand-site > header .navbar-brand img { height:64px; max-height:64px; }
 .v113-brand-site > header .nav-link { font-size:14px; }
 @media(max-width:767.98px) { .v113-brand-site > header .navbar-brand img { height:52px; max-height:52px; } }
+
+/* Consistent action colors on native shop, checkout, events and portal pages. */
+.v113-brand-site { --bs-link-color-rgb:177,18,25; --bs-link-hover-color-rgb:136,14,19; }
+.v113-brand-site .btn-outline-secondary {
+    --bs-btn-color:#303438; --bs-btn-border-color:#60656a;
+    --bs-btn-hover-bg:#303438; --bs-btn-hover-border-color:#303438; --bs-btn-hover-color:#fff;
+    --bs-btn-active-bg:#171a1c; --bs-btn-active-border-color:#171a1c; --bs-btn-active-color:#fff;
+    --bs-btn-focus-shadow-rgb:48,52,56;
+    color:#303438; border-color:#60656a; background-color:transparent;
+}
+.v113-brand-site .btn-outline-secondary:hover, .v113-brand-site .btn-outline-secondary:active { background:#303438; border-color:#303438; color:#fff; }
+.v113-brand-site .btn-link { color:#b11219; --bs-btn-color:#b11219; --bs-btn-hover-color:#880e13; --bs-btn-active-color:#880e13; }
+.v113-brand-site .btn-link:hover { color:#880e13; }
+.v113-brand-site .btn-light { --bs-btn-bg:#e3e5e5; --bs-btn-border-color:#e3e5e5; --bs-btn-color:#17191a; --bs-btn-hover-bg:#c9cdcd; --bs-btn-hover-border-color:#c9cdcd; --bs-btn-hover-color:#17191a; background-color:#e3e5e5; border-color:#e3e5e5; color:#17191a; }
+.v113-brand-site .btn-light:hover { background-color:#c9cdcd; border-color:#c9cdcd; color:#17191a; }
+.v113-brand-site > header .btn-light { background-color:#292929; border-color:#555; color:#fff; }
+.v113-brand-site > header .btn-outline-secondary { color:#fff; border-color:#777; }

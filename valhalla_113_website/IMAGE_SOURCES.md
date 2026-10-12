@@ -22,3 +22,5 @@ Social/event artwork is reproduced at the owner's request for their venue and li
 - [Instagram @valhalla113tt](https://www.instagram.com/valhalla113tt/)
 - [Official Facebook page](https://www.facebook.com/profile.php?id=61553546611658)
 - Public Facebook after-work, bucket-night and R&B event posts informed the tone; dated deals are not hardcoded into the website.
+
+Demo catalogue: burger, wings, ribs and fries use the original repository’s menu artwork (`menu_*.jpg`). Grilled Chicken and Citrus Spritz use the credited editorial photos above. All six are illustrative demo products, not a verified current menu.

@@ -192,13 +192,29 @@
 /* Native Odoo carousel: its interaction handles cycling, touch and reduced motion. */
 .v113-page .v113-hero-carousel { position:relative; }
 .v113-page .v113-hero-carousel .carousel-item { padding:0; }
-.v113-page .v113-hero-carousel .carousel-control-prev,
-.v113-page .v113-hero-carousel .carousel-control-next { width:44px; height:44px; top:50%; bottom:auto; transform:translateY(-50%); background:#101112bb; border:1px solid #ffffff66; border-radius:50%; opacity:1; }
-.v113-page .v113-hero-carousel .carousel-control-prev { left:12px; }
-.v113-page .v113-hero-carousel .carousel-control-next { right:12px; }
-.v113-page .v113-hero-carousel .carousel-control-prev-icon,
-.v113-page .v113-hero-carousel .carousel-control-next-icon { width:18px; height:18px; }
 .v113-page .v113-hero-carousel .carousel-indicators { margin-bottom:14px; }
 .v113-page .v113-hero-carousel .carousel-indicators button { width:28px; height:4px; background-color:#fff; }
 .v113-hero-visual .v113-hero-stamp { z-index:3; pointer-events:none; }
 .v113-hero-visual .v113-photo-caption { bottom:60px; z-index:2; pointer-events:none; }
+
+.v113-upcoming { background:#1b1d1f; color:#fff; border-block:1px solid #343638; }
+.v113-upcoming .v113-eyebrow { color:#ff787d; }
+.v113-upcoming .v113-section-head p { color:#c4c6c8; }
+.v113-upcoming-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.v113-page .v113-upcoming-card { display:block; background:#111214; border:1px solid #414346; color:#fff; text-decoration:none; }
+.v113-upcoming-card:hover { border-color:#d71920; }
+.v113-event-cover { height:230px; overflow:hidden; }
+.v113-upcoming-info { padding:26px; }
+.v113-upcoming-info .v113-eyebrow { font-size:10px; margin-bottom:16px; }
+.v113-upcoming-info h3 { font-size:25px; margin-bottom:16px; }
+.v113-upcoming-info p { font-size:14px; color:#bbb; }
+.v113-event-time { display:block; color:#ccc; font-size:13px; }
+.v113-event-action { display:inline-block; margin-top:24px; border-bottom:1px solid #ff787d; padding-bottom:6px; font-size:13px; font-weight:700; }
+.v113-events-empty { display:flex; gap:28px; align-items:center; padding:34px; border:1px solid #414346; background:#111214; }
+.v113-events-empty > .fa { color:#ff787d; font-size:35px; }
+.v113-events-empty > div { flex:1; }
+.v113-events-empty h3 { font-size:23px; margin-bottom:10px; }
+.v113-events-empty p { color:#bbb; font-size:14px; margin-bottom:0; }
+.v113-page .v113-hero-carousel .carousel-indicators button { box-sizing:content-box; min-height:4px; padding-block:10px; background-clip:content-box; border:0; opacity:.6; }
+.v113-page .v113-hero-carousel .carousel-indicators button.active { opacity:1; }
+@media(max-width:767.98px) { .v113-upcoming-grid { grid-template-columns:1fr; } .v113-events-empty { flex-direction:column; align-items:flex-start; padding:26px; } }

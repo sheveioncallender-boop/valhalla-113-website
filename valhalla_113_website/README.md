@@ -1,6 +1,6 @@
 # Valhalla 113 Website — Odoo 19
 
-Version **19.0.3.1.0**. Redesigns the homepage and all five supporting pages with Valhalla’s black/red/silver identity, licensed food/drink photography and authentic past-event artwork. The social-led direction puts food, drinks, Caribbean music and the lime first. Odoo’s native header and commerce flow remain intact. See [image provenance](IMAGE_SOURCES.md).
+Version **19.0.3.2.0**. Redesigns the homepage and all five supporting pages with Valhalla’s black/red/silver identity, licensed food/drink photography and authentic past-event artwork. The social-led direction puts food, drinks, Caribbean music and the lime first. Odoo’s native header and commerce flow remain intact. See [image provenance](IMAGE_SOURCES.md).
 
 ## Install fresh through Cloudpepper
 
@@ -31,7 +31,7 @@ Edit page content with Odoo Website's editor. Manage navigation with its native 
 
 No custom cart, checkout, payment controller or order model is added. Homepage highlights read up to four published products in the current website/company, ordered by Odoo's website sequence. Images, names and links come from the product records. Displayed prices use Odoo's pricelist, currency, tax and fiscal-position calculation. Selecting an item opens its native product page for variants/options. Zero-price restrictions remain native.
 
-No placeholder prices, products, inventory quantities, tax rates, payment providers, delivery charges or accounting entries are created. If no products are published, the homepage provides a contact/menu message.
+Six owner-requested demo products with illustrative prices and images are created once on installation/upgrade. No inventory quantities, tax rates, payment providers, delivery charges or accounting entries are created. If no products are published, the homepage provides a contact/menu message.
 
 | Channel | Product settings | Order flow |
 | --- | --- | --- |
@@ -66,3 +66,16 @@ The addon is an application (`application=True`) and appears in the Apps filter 
 ## Update 19.0.3.1.0
 
 The top banner now cycles through three photographs every six seconds using Odoo’s native carousel, with arrows, indicators and touch support. Odoo supplies pause on hover/focus and reduced-motion handling. The footer shows the current year and Valhalla 113 Bar & Grill, and omits Odoo promotional attribution on the branded website. Upgrade the module after syncing Cloudpepper.
+
+
+## Update 19.0.3.2.0
+
+- Banner controls are bottom indicators only; native touch and automatic rotation remain.
+- Homepage and What’s On show up to three published, public, upcoming/ongoing native Odoo events for this website/company, excluding cancelled and ended events. Manage dates, event cover images, visibility and publication in **Events**. Event details and registration use Odoo’s native flow. No fictitious upcoming events are created.
+- Native `website_event` and `point_of_sale` dependencies install as needed.
+- Six showcase products: BBQ Wings (65), Classic Beef Burger (75), BBQ Ribs (110), Loaded Fries (45), Grilled Chicken (80), Citrus Spritz (55). Prices use the existing company currency and its native tax defaults; verify before live sales. Product references start `V113-DEMO-` for easy cleanup. Names have no demo label on the storefront.
+- Products are published to the Valhalla website, available in POS, and enabled for Self Order when that app is installed. Its native default also enables products if Self Order is installed later. POS categories are **Grill & Bites** and **Drinks**; website categories use the same names. Reload an open POS after upgrading. If its configuration restricts available categories, include these categories using the native POS settings.
+- The same product/variant records serve website and POS. No duplicate catalogue, stock adjustment or transaction is created. Subsequent upgrades do not recreate deleted demo products or overwrite changes.
+- Primary buttons are red, secondary buttons charcoal, light buttons silver, and outline/link actions use matching brand colors. Status-specific warning/success/danger controls retain their native meaning.
+
+Validation for this update: Odoo 19 source field/template checks, Python/XML/CSS validation, isolated catalogue setup checks with/without Self Order (including repeat-upgrade preservation), and a Bootstrap desktop/mobile fixture for automatic cycling and bottom indicator navigation passed. A live Odoo installation, event registration, website checkout and POS sale have not been run here.

@@ -22,6 +22,19 @@ class Website(models.Model):
             order="website_sequence, id", limit=4,
         )
 
+    def _valhalla_upcoming_events(self):
+        self.ensure_one()
+        # Read as the current visitor; never expose private or unpublished events.
+        return self.env["event.event"].search(
+            Domain.AND([self.website_domain(), [
+                ("is_published", "=", True),
+                ("website_visibility", "=", "public"),
+                ("company_id", "in", [False, self.company_id.id]),
+                ("date_end", ">=", fields.Datetime.now()),
+                ("kanban_state", "!=", "cancel"),
+            ]]), order="date_begin, id", limit=3,
+        )
+
     @api.model
     def _setup_valhalla_website(self):
         """Run on fresh installation and first upgrade; retain later editor changes."""
