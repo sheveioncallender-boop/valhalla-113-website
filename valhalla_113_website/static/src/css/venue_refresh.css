@@ -1,0 +1,83 @@
+/* Venue photography and enquiry layouts; native Odoo transactions stay intact. */
+.v113-page { --v-paper:#f0f1f2; }
+.v113-refresh .v113-eyebrow { font-size:12px; }
+.v113-refresh p { font-size:18px; }
+.v113-immersive-hero { min-height:720px; padding:90px 0 70px; overflow:hidden; isolation:isolate; }
+.v113-immersive-hero .v113-hero-grid { display:block; }
+.v113-immersive-hero .v113-hero-copy { max-width:740px; padding:40px 0 70px; z-index:2; }
+.v113-immersive-hero .v113-hero-copy h1 { font-size:clamp(52px,6.6vw,96px); line-height:1; letter-spacing:-.055em; text-shadow:0 2px 24px #0005; }
+.v113-immersive-hero .v113-hero-copy p { color:#eee; max-width:500px; }
+.v113-immersive-hero .v113-eyebrow { color:#fff; }
+.v113-immersive-hero .v113-hero-visual { position:absolute; inset:0; padding:0; z-index:-1; }
+.v113-immersive-hero .v113-hero-visual::before { inset:0; border:0; z-index:1; background:linear-gradient(90deg,rgba(6,7,8,.95),rgba(6,7,8,.75) 40%,rgba(6,7,8,.18)),linear-gradient(0deg,#101112,transparent 35%); pointer-events:none; }
+.v113-immersive-hero .s_carousel_wrapper,.v113-immersive-hero .carousel,.v113-immersive-hero .carousel-inner,.v113-immersive-hero .carousel-item { height:100%; }
+.v113-immersive-hero .v113-hero-photo { height:100%; min-height:720px; object-position:65% 55%; }
+.v113-immersive-hero .v113-hero-stamp { display:none; }
+.v113-immersive-hero .v113-photo-caption { z-index:2; left:auto; right:48px; bottom:34px; background:transparent; border-top:1px solid #ffffff70; padding:14px 0 0; font-size:11px; }
+.v113-immersive-hero .carousel-indicators { z-index:3; bottom:26px; margin:0; justify-content:flex-start; left:48px; right:auto; }
+.v113-immersive-hero .carousel-indicators button { min-width:38px; height:5px; border:0; background:#fff; }
+.v113-refresh .v113-featured-social > img { object-fit:cover; }
+.v113-venue-feature { background:#1d2023; border-block:1px solid #393c3e; }
+.v113-venue-feature .v113-story-photo { height:560px; object-position:center; border-radius:4px; }
+.v113-venue-feature h2 em { font-style:normal; color:#ff555c; }
+.v113-venue-feature .v113-eyebrow { color:#ff878c; }
+.v113-venue-feature p { color:#d0d3d6; }
+.v113-occasion-list { list-style:none; padding:0; margin:28px 0; }
+.v113-occasion-list li { padding:14px 0; border-bottom:1px solid #42464a; font-size:16px; }
+.v113-occasion-list li::before { content:'↗'; color:#ff6970; margin-right:14px; }
+.v113-page .v113-small-note { font-size:13px; line-height:1.65; margin:20px 0 0; }
+.v113-gallery-grid { columns:3; column-gap:22px; }
+.v113-gallery-item { display:block; break-inside:avoid; margin:0 0 24px; color:#17191a; text-decoration:none; background:#fff; border:1px solid #d4d7da; }
+.v113-gallery-item img { width:100%; height:auto; }
+.v113-gallery-item span { display:block; padding:17px 19px; font-size:14px; font-weight:700; }
+.v113-gallery-item:hover { color:#aa131b; border-color:#aa131b; }
+.v113-video-grid { display:grid; grid-template-columns:1fr 1fr; gap:90px; align-items:center; }
+.v113-video-grid video { display:block; width:100%; max-height:650px; background:#070809; border:1px solid #4a4d50; border-radius:4px; }
+.v113-venue-cards { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+.v113-venue-cards article { background:#fff; border:1px solid #d3d6d8; padding:0 0 22px; }
+.v113-venue-cards img { width:100%; height:300px; object-fit:cover; }
+.v113-venue-cards h3 { margin:26px 24px 14px; }
+.v113-venue-cards p { margin:0 24px; font-size:16px; }
+.v113-enquiry-layout { display:grid; grid-template-columns:.8fr 1.2fr; gap:70px; align-items:start; }
+.v113-enquiry-layout aside p { font-size:16px; }
+.v113-enquiry-form { background:#fff; padding:40px; border:1px solid #c5c9cd; border-top:4px solid #d71920; border-radius:4px; color:#17191a; }
+.v113-form-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+.v113-form-field { min-width:0; }
+.v113-form-field label { display:block; font-size:14px; font-weight:700; margin-bottom:10px; }
+.v113-form-field label span { color:#b11219; }
+.v113-form-field .form-control,.v113-form-field .form-select { width:100%; min-height:50px; padding:12px; font-size:16px; line-height:1.5; background-color:#fafafa; color:#17191a; border:1px solid #aeb4ba; border-radius:3px; }
+.v113-form-field textarea.form-control { min-height:150px; }
+.v113-form-wide { grid-column:1/-1; }
+.v113-enquiry-form .s_website_form_submit { display:flex; flex-wrap:wrap; gap:15px; align-items:center; }
+.v113-enquiry-form .s_website_form_send { cursor:pointer; }
+.v113-thank-you { max-width:900px; padding-block:50px; }
+#venue-enquiry { scroll-margin-top:100px; }
+@media (min-width:1600px) { .v113-immersive-hero .carousel-indicators { left:calc((100vw - 1280px)/2); } }
+@media (max-width:991px) {
+ .v113-immersive-hero { min-height:650px; padding-block:50px; }
+ .v113-immersive-hero .v113-hero-photo { min-height:650px; }
+ .v113-immersive-hero .v113-hero-copy { max-width:620px; }
+ .v113-immersive-hero .v113-hero-visual::before { background:linear-gradient(90deg,#080a0bef,rgba(8,10,11,.55)),linear-gradient(0deg,#101112,transparent); }
+ .v113-enquiry-layout,.v113-video-grid { grid-template-columns:1fr; gap:40px; }
+ .v113-venue-cards { gap:16px; }
+ .v113-venue-cards img { height:240px; }
+ .v113-gallery-grid { columns:2; }
+}
+@media (max-width:600px) {
+ .v113-immersive-hero { min-height:610px; padding:35px 0 55px; }
+ .v113-immersive-hero .v113-hero-copy { padding:35px 0; }
+ .v113-immersive-hero .v113-hero-copy h1 { font-size:clamp(43px,11vw,62px); }
+ .v113-immersive-hero .v113-hero-photo { min-height:610px; }
+ .v113-immersive-hero .v113-photo-caption { right:24px; bottom:26px; font-size:8px; max-width:155px; }
+ .v113-immersive-hero .carousel-indicators { left:24px; bottom:30px; }
+ .v113-immersive-hero .carousel-indicators button { min-width:25px; }
+ .v113-refresh p { font-size:16px; }
+ .v113-venue-feature .v113-story-photo { height:400px; }
+ .v113-venue-cards,.v113-form-grid { grid-template-columns:1fr; }
+ .v113-venue-cards img { height:300px; }
+ .v113-enquiry-form { padding:25px 20px; }
+ .v113-enquiry-form .s_website_form_send { width:100%; }
+ .v113-gallery-grid { columns:1; }
+ .v113-thank-you { padding-block:15px; }
+}
+@media (prefers-reduced-motion:reduce) { .v113-refresh *, .v113-refresh *::before { scroll-behavior:auto !important; transition:none !important; animation:none !important; } }

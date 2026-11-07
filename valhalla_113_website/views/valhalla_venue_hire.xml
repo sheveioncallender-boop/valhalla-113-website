@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <data noupdate="1">
+    <template id="venue_hire_page" name="Venue Hire">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure v113-page v113-refresh">
+          <section class="v113-inner-hero">
+            <div class="v113-container v113-inner-grid">
+              <div>
+                <span class="v113-eyebrow">Celebrate at Valhalla 113</span>
+                <h1>YOUR OCCASION.<br/><em>OUR PLACE.</em></h1>
+                <p>Bring your people together in Caroni. From birthdays to team celebrations, let’s talk about making Valhalla part of your plans.</p>
+                <div class="v113-actions">
+                  <a href="#venue-enquiry" class="btn btn-primary v113-button">Enquire about your date</a>
+                  <a href="/gallery" class="btn btn-outline-light v113-button">See the venue</a>
+                </div>
+              </div>
+              <img src="/valhalla_113_website/static/src/img/venue/celebration.jpg" alt="A celebration setup at Valhalla 113" class="v113-inner-photo"/>
+            </div>
+          </section>
+          <section class="v113-section v113-light">
+            <div class="v113-container">
+              <div class="v113-section-head">
+                <div>
+                  <span class="v113-eyebrow">Room for your kind of gathering</span>
+                  <h2>Make it<br/>a moment.</h2>
+                </div>
+                <p>Tell us about your occasion, preferred date and estimated guest count. Our team will discuss the space, food, drinks and arrangements with you.</p>
+              </div>
+              <div class="v113-venue-cards">
+                <article>
+                  <img src="/valhalla_113_website/static/src/img/venue/terrace.jpg" alt="Valhalla’s terrace" loading="lazy"/>
+                  <h3>A relaxed gathering</h3>
+                  <p>Catch up with your people on the open-air terrace.</p>
+                </article>
+                <article>
+                  <img src="/valhalla_113_website/static/src/img/venue/party-entrance.jpg" alt="An event entrance decorated at Valhalla" loading="lazy"/>
+                  <h3>A special celebration</h3>
+                  <p>Bring your birthday or private-party plans to the team.</p>
+                </article>
+                <article>
+                  <img src="/valhalla_113_website/static/src/img/venue/dining-room.jpg" alt="Indoor seating at Valhalla" loading="lazy"/>
+                  <h3>Time with the team</h3>
+                  <p>Discuss a company gathering, team event or group meal.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+          <section class="v113-section v113-silver" id="venue-enquiry">
+            <div class="v113-container v113-enquiry-layout">
+              <aside>
+                <span class="v113-eyebrow">Let’s start planning</span>
+                <h2>Have a date<br/>in mind?</h2>
+                <p>Send your details and the team will contact you to discuss availability and pricing.</p>
+                <p><strong>This is an enquiry, not a confirmed reservation.</strong> Your date and arrangements must be confirmed by the Valhalla team.</p>
+                <a href="tel:+18683090421" class="v113-text-link">Call (868) 309-0421</a>
+                <br/>
+                <a href="https://wa.me/18683090421" class="v113-text-link">Chat on WhatsApp ↗</a>
+              </aside>
+              <div class="s_website_form v113-enquiry-form" data-snippet="s_website_form" data-name="Venue Hire Enquiry">
+                <form action="/website/form/" method="post" enctype="multipart/form-data" data-model_name="crm.lead" data-success-mode="redirect" data-success-page="/venue-hire/thank-you" class="o_mark_required" data-mark="*">
+                  <input type="hidden" name="name" value="Valhalla 113 — Venue hire enquiry"/>
+                  <input type="hidden" name="type" value="opportunity"/>
+                  <div class="s_website_form_rows v113-form-grid">
+                    <div class="s_website_form_field s_website_form_required v113-form-field" data-type="text" data-name="Field">
+                      <label class="s_website_form_label" for="v113-field-0">Your name <span aria-hidden="true">*</span></label>
+                      <input id="v113-field-0" name="contact_name" type="text" autocomplete="name" class="form-control s_website_form_input" required="required"/>
+                    </div>
+                    <div class="s_website_form_field s_website_form_required v113-form-field" data-type="email" data-name="Field">
+                      <label class="s_website_form_label" for="v113-field-1">Email address <span aria-hidden="true">*</span></label>
+                      <input id="v113-field-1" name="email_from" type="email" autocomplete="email" class="form-control s_website_form_input" required="required"/>
+                    </div>
+                    <div class="s_website_form_field s_website_form_required v113-form-field" data-type="tel" data-name="Field">
+                      <label class="s_website_form_label" for="v113-field-2">Phone number <span aria-hidden="true">*</span></label>
+                      <input id="v113-field-2" name="phone" type="tel" autocomplete="tel" class="form-control s_website_form_input" required="required"/>
+                    </div>
+                    <div class="s_website_form_field s_website_form_required v113-form-field s_website_form_custom" data-type="date" data-name="Field">
+                      <label class="s_website_form_label" for="v113-field-3">Preferred date <span aria-hidden="true">*</span></label>
+                      <input id="v113-field-3" name="Event date" type="date" autocomplete="off" class="form-control s_website_form_input" required="required" t-att-min="datetime.date.today().isoformat()"/>
+                    </div>
+                    <div class="s_website_form_field s_website_form_required v113-form-field s_website_form_custom" data-type="number" data-name="Field">
+                      <label class="s_website_form_label" for="v113-field-4">Estimated guests <span aria-hidden="true">*</span></label>
+                      <input id="v113-field-4" name="Guest count" type="number" autocomplete="off" class="form-control s_website_form_input" required="required" min="1" step="1" max="100000"/>
+                    </div>
+                    <div class="s_website_form_field s_website_form_required v113-form-field s_website_form_custom" data-type="selection" data-name="Field">
+                      <label class="s_website_form_label" for="v113-event-type">Occasion <span aria-hidden="true">*</span></label>
+                      <select id="v113-event-type" name="Occasion" class="form-select s_website_form_input" required="required">
+                        <option value="">Select an occasion</option>
+                        <option>Birthday</option>
+                        <option>Private party</option>
+                        <option>Corporate or team event</option>
+                        <option>Group gathering</option>
+                        <option>Other celebration</option>
+                      </select>
+                    </div>
+                    <div class="s_website_form_field v113-form-field v113-form-wide s_website_form_custom" data-type="text" data-name="Field">
+                      <label class="s_website_form_label" for="v113-details">Tell us about your event</label>
+                      <textarea id="v113-details" name="Event details" rows="5" maxlength="10000" class="form-control s_website_form_input" placeholder="Preferred time, food and drinks, setup ideas, and anything else we should know."/>
+                    </div>
+                    <div class="s_website_form_submit v113-form-wide">
+                      <button type="submit" class="btn btn-primary s_website_form_send v113-button">Send venue enquiry <span aria-hidden="true">↗</span></button>
+                      <span id="s_website_form_result" role="status" aria-live="polite"/>
+                    </div>
+                  </div>
+                  <p class="v113-small-note">We’ll use these details to respond to your venue enquiry.</p>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+    <record id="page_venue_hire" model="website.page">
+      <field name="name">Venue Hire</field>
+      <field name="url">/venue-hire</field>
+      <field name="view_id" ref="venue_hire_page"/>
+      <field name="is_published" eval="True"/>
+      <field name="website_meta_title">Venue Hire | Valhalla 113 Bar &amp; Grill</field>
+      <field name="website_meta_description">Plan a birthday, private party or team event at Valhalla 113 in Caroni. Enquire about your preferred date and arrangements.</field>
+    </record>
+    <template id="venue_hire_thanks" name="Venue Enquiry Received">
+      <t t-call="website.layout">
+        <div id="wrap" class="oe_structure v113-page">
+          <section class="v113-section v113-dark">
+            <div class="v113-container v113-thank-you">
+              <span class="v113-eyebrow">Thank you for getting in touch</span>
+              <h1>LET’S MAKE<br/><em>A PLAN.</em></h1>
+              <p>Your venue enquiry has been received. Our team will contact you to discuss your event.</p>
+              <p>Your date is not reserved yet. Please wait for the team to confirm availability and arrangements.</p>
+              <div class="v113-actions">
+                <a href="/" class="btn btn-primary v113-button">Back to Valhalla</a>
+                <a href="/gallery" class="btn btn-outline-light v113-button">Explore the gallery</a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </t>
+    </template>
+    <record id="page_venue_hire_thanks" model="website.page">
+      <field name="name">Venue Enquiry Received</field>
+      <field name="url">/venue-hire/thank-you</field>
+      <field name="view_id" ref="venue_hire_thanks"/>
+      <field name="is_published" eval="True"/>
+      <field name="website_indexed" eval="False"/>
+    </record>
+  </data>
+</odoo>

@@ -1,0 +1,89 @@
+/* Presentation only. All navigation, cart and checkout interactions belong to Odoo. */
+.v113-brand-site {
+    --primary: #d71920;
+    --bs-primary: #d71920;
+    --bs-primary-rgb: 215,25,32;
+    --bs-link-color: #b11219;
+    --bs-link-hover-color: #880e13;
+}
+.v113-brand-site .btn-primary {
+    --bs-btn-bg: #d71920; --bs-btn-border-color: #d71920; --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #b11219; --bs-btn-hover-border-color: #b11219; --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #900e15; --bs-btn-active-border-color: #900e15; --bs-btn-active-color: #fff;
+    --bs-btn-disabled-bg: #d71920; --bs-btn-disabled-border-color: #d71920;
+    --bs-btn-focus-shadow-rgb: 215,25,32;
+    background-color: var(--bs-btn-bg); border-color: var(--bs-btn-border-color); color: #fff;
+}
+.v113-brand-site .btn-primary:hover { background-color:#b11219; border-color:#b11219; color:#fff; }
+.v113-brand-site .btn-primary:active { background-color:#900e15; border-color:#900e15; }
+.v113-brand-site .btn-outline-primary {
+    --bs-btn-color:#b11219; --bs-btn-border-color:#d71920;
+    --bs-btn-hover-bg:#d71920; --bs-btn-hover-color:#fff; --bs-btn-hover-border-color:#d71920;
+    --bs-btn-active-bg:#b11219; --bs-btn-active-color:#fff; --bs-btn-active-border-color:#b11219;
+    color:#b11219; border-color:#d71920;
+}
+.v113-brand-site .btn-outline-primary:hover { background-color:#d71920; color:#fff; }
+.v113-brand-site .text-primary { color:#b11219 !important; }
+.v113-brand-site .bg-primary, .v113-brand-site .text-bg-primary { background-color:#d71920 !important; color:#fff !important; }
+.v113-brand-site .form-check-input:checked { background-color:#d71920; border-color:#d71920; }
+.v113-brand-site .form-control:focus, .v113-brand-site .form-select:focus { border-color:#d71920; box-shadow:0 0 0 .2rem rgba(215,25,32,.15); }
+.v113-brand-site .page-item.active .page-link { background-color:#d71920; border-color:#d71920; color:#fff; }
+.v113-brand-site .nav-pills .nav-link.active { background-color:#d71920; color:#fff; }
+/* Retain Odoo's header markup, mobile offcanvas, account, search and cart widgets. */
+.v113-brand-site > header, .v113-brand-site > header .navbar,
+.v113-brand-site > header .offcanvas { background:#080808 !important; color:#fff !important; }
+.v113-brand-site > header { border-bottom:2px solid #d71920; }
+.v113-brand-site > header .navbar { --bs-navbar-color:#fff; --bs-navbar-hover-color:#ff777c; --bs-navbar-active-color:#fff; --bs-navbar-toggler-border-color:#aaa; }
+.v113-brand-site > header .nav-link, .v113-brand-site > header .navbar-toggler,
+.v113-brand-site > header .o_navlink_background, .v113-brand-site > header .o_header_mobile_buttons_wrap a { color:#fff !important; }
+.v113-brand-site > header .nav-link:hover { color:#ff777c !important; }
+.v113-brand-site > header .navbar-brand img { max-height:64px; width:auto; object-fit:contain; }
+.v113-brand-site > header .navbar-toggler { border-color:#777; min-width:44px; min-height:44px; }
+.v113-brand-site > header .navbar-toggler-icon {
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.v113-brand-site > header .btn-close { filter:invert(1) grayscale(100%) brightness(200%); }
+.v113-brand-site > header .dropdown-menu { background:#fff; color:#171717; }
+.v113-brand-site > header .dropdown-item { color:#171717; }
+.v113-brand-site > header .dropdown-item:active { background:#d71920; color:#fff; }
+.v113-brand-site > header .my_cart_quantity { background:#d71920 !important; color:#fff !important; }
+.v113-brand-site > footer { background:#080808 !important; color:#eee; }
+.v113-brand-site > footer .o_footer_copyright { background:#101010 !important; color:#ccc !important; }
+.v113-brand-site > footer .o_footer_copyright a { color:#eee; }
+.v113-brand-site a:focus-visible, .v113-brand-site button:focus-visible { outline:3px solid #ff757c; outline-offset:4px; }
+.v113-brand-site .btn-secondary {
+    --bs-btn-bg:#303438; --bs-btn-border-color:#303438; --bs-btn-color:#fff;
+    --bs-btn-hover-bg:#171a1c; --bs-btn-hover-border-color:#171a1c; --bs-btn-hover-color:#fff;
+    --bs-btn-active-bg:#101214; --bs-btn-active-border-color:#101214;
+    background-color:#303438; border-color:#303438; color:#fff;
+}
+.v113-brand-site .btn-secondary:hover { background-color:#171a1c; border-color:#171a1c; color:#fff; }
+.v113-brand-site > header .o_navlink_background,
+.v113-brand-site > header .o_navlink_background_hover:hover { background-color:#292929 !important; color:#fff !important; }
+.v113-brand-site > header .o_wsale_my_cart > a { color:#fff !important; }
+.v113-brand-site > header .o_header_mobile_buttons_wrap .btn { min-width:44px; min-height:44px; display:inline-flex; align-items:center; justify-content:center; }
+
+/* Override theme color combinations inside this footer only. */
+.v113-brand-site > footer #footer a:not(.btn) { color:#c6c8ca; }
+.v113-brand-site > footer #footer a:not(.btn):hover { color:#ff787d; }
+.v113-brand-site > footer .o_footer_copyright .o_footer_copyright_name { color:#c6c8ca !important; }
+.v113-brand-site > header .navbar-brand img { height:64px; max-height:64px; }
+.v113-brand-site > header .nav-link { font-size:14px; }
+@media(max-width:767.98px) { .v113-brand-site > header .navbar-brand img { height:52px; max-height:52px; } }
+
+/* Consistent action colors on native shop, checkout, events and portal pages. */
+.v113-brand-site { --bs-link-color-rgb:177,18,25; --bs-link-hover-color-rgb:136,14,19; }
+.v113-brand-site .btn-outline-secondary {
+    --bs-btn-color:#303438; --bs-btn-border-color:#60656a;
+    --bs-btn-hover-bg:#303438; --bs-btn-hover-border-color:#303438; --bs-btn-hover-color:#fff;
+    --bs-btn-active-bg:#171a1c; --bs-btn-active-border-color:#171a1c; --bs-btn-active-color:#fff;
+    --bs-btn-focus-shadow-rgb:48,52,56;
+    color:#303438; border-color:#60656a; background-color:transparent;
+}
+.v113-brand-site .btn-outline-secondary:hover, .v113-brand-site .btn-outline-secondary:active { background:#303438; border-color:#303438; color:#fff; }
+.v113-brand-site .btn-link { color:#b11219; --bs-btn-color:#b11219; --bs-btn-hover-color:#880e13; --bs-btn-active-color:#880e13; }
+.v113-brand-site .btn-link:hover { color:#880e13; }
+.v113-brand-site .btn-light { --bs-btn-bg:#e3e5e5; --bs-btn-border-color:#e3e5e5; --bs-btn-color:#17191a; --bs-btn-hover-bg:#c9cdcd; --bs-btn-hover-border-color:#c9cdcd; --bs-btn-hover-color:#17191a; background-color:#e3e5e5; border-color:#e3e5e5; color:#17191a; }
+.v113-brand-site .btn-light:hover { background-color:#c9cdcd; border-color:#c9cdcd; color:#17191a; }
+.v113-brand-site > header .btn-light { background-color:#292929; border-color:#555; color:#fff; }
+.v113-brand-site > header .btn-outline-secondary { color:#fff; border-color:#777; }

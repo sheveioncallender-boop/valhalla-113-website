@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="upcoming_events_section" name="Valhalla Upcoming Events">
+        <section class="v113-section v113-upcoming" id="upcoming-events">
+            <div class="v113-container">
+                <div class="v113-section-head">
+                    <div><span class="v113-eyebrow">Make your next plan</span><h2>Upcoming events.</h2></div>
+                    <div><p>Find your next night out at Valhalla. See the dates, details, and how to join us.</p><a href="/event" class="btn btn-primary v113-button">View all events</a></div>
+                </div>
+                <div class="o_not_editable">
+                    <t t-set="upcoming_events" t-value="website._valhalla_upcoming_events()"/>
+                    <div t-if="upcoming_events" class="v113-upcoming-grid">
+                        <a t-foreach="upcoming_events" t-as="event" t-att-href="event.website_url" class="v113-upcoming-card">
+                            <div class="v113-event-cover"><t t-call="website.record_cover"><t t-set="_record" t-value="event"/></t></div>
+                            <div class="v113-upcoming-info">
+                                <span class="v113-eyebrow" t-field="event.date_begin" t-options="{'widget': 'datetime', 'tz_name': event.date_tz, 'format': 'EEE, d MMM yyyy'}"/>
+                                <h3 t-field="event.name"/>
+                                <p t-if="event.subtitle" t-field="event.subtitle"/>
+                                <span class="v113-event-time" t-field="event.date_begin" t-options="{'widget': 'datetime', 'tz_name': event.date_tz, 'format': 'h:mm a'}"/>
+                                <span class="v113-event-action">View event details</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div t-else="" class="v113-events-empty">
+                        <span class="fa fa-calendar" aria-hidden="true"/>
+                        <div><h3>The next lime is on its way.</h3><p>New dates will appear here as they’re announced. Follow our socials for the latest from Valhalla.</p></div>
+                        <a href="https://www.facebook.com/profile.php?id=61553546611658" class="btn btn-outline-light v113-button">Follow the latest</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="whats_on_upcoming_events" inherit_id="valhalla_113_website.whats_on_page" name="Upcoming Events on What’s On" priority="80">
+        <xpath expr="//section[hasclass('v113-inner-hero')]" position="after"><t t-call="valhalla_113_website.upcoming_events_section"/></xpath>
+    </template>
+</odoo>
